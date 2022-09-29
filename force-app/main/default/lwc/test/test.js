@@ -1,3 +1,5 @@
-import { LightningElement } from 'lwc';
+import { LightningElement,api,wire,track } from 'lwc';
 
-export default class Test extends LightningElement {}
+export default class Test extends LightningElement {
+@api githubPull;
+}
