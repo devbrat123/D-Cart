@@ -1,0 +1,18 @@
+<template>
+    
+    <lightning-card>
+        <lightning-layout>
+            <lightning-layout-item>
+                  <template for:each={productsData.data} for:item="product">
+                    <div key={product.Id}>
+                        <img src={product.Image__c} alt="Product picture" />
+                        <p>Product Name: {product.Name}</p>
+                        <p>Price: {product.Price__c}</p>
+                        <p>Description:{product.Product_Description__c}</p>
+                    </div>
+                        
+                  </template>
+</lightning-layout-item>
+</lightning-layout>
+</lightning-card>
+</template>
