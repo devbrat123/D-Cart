@@ -1,13 +1,14 @@
-.slds-card {
+/*.slds-card {
     background: rgb(243, 242, 242);
 }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 c-product-tile {
-    min-width: 200px;
+    height: 370px;
+    width: auto;
     flex: 1;
 }
+
+.lightTile {
+    z-index: 1;
+}
+*/
