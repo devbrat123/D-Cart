@@ -1,10 +1,18 @@
 <template>
-    <div class="slds-card slds-var-p-around_x-small">
+    <div class="slds-card">
+        <lightning-layout horizontal-align="left" multiple-rows="True">
+            
+            
     <template for:each={products.data} for:item="Product">
-        <div key={Product.Id} class="content">
-           
+        <lightning-layout-item size="4" key={Product.Id}>
+        <div  class="content">
+         <lightning-tile class="lightTile">
 <c-product-tile products-data={Product}></c-product-tile>
+</lightning-tile>   
 </div>
+</lightning-layout-item>
 </template>
+
+</lightning-layout>
 </div>
 </template>
